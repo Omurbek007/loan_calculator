@@ -19,7 +19,8 @@
           <div class="card text-center mt-5">
             <div class="card-body">
               <h3 class="heading display-5 pb-3">Кредитный калькулятор</h3>
-              <form id="loan-form">
+              <h5 id="danger" class="text-danger border border-danger rounded p-2" bo>Введите правилные цифры!</h5>
+              <form id="loan-form" action="#">
                 <div class="mb-3">
                   <div class="input-group">
                     <span class="input-group-text" id="basic-addon1">$</span>
@@ -56,20 +57,19 @@
                   </button>
                 </div>
               </form>
-              <!--               
+                            
               <div id="loader">
                 <img class="w-100" src="images/loader.gif" alt="Loader" />
-              </div> -->
+              </div>
 
               <div id="output">
                 <h4>Результат</h4>
                 <div class="mb-3">
                   <div class="input-group">
-                    <span class="input-group-text" id="monthly-payment">
-                      Месячный платеж</span
-                    >
+                    <span class="input-group-text">
+                      Месячный платеж</span>
                     <input
-                      id="amount"
+                      id="monthly-payment"
                       type="number"
                       class="form-control"
                       disabled
@@ -78,7 +78,7 @@
                 </div>
                 <div class="mb-3">
                   <div class="input-group">
-                    <span class="input-group-text" id="total"> Итого</span>
+                    <span class="input-group-text"> Итого</span>
                     <input
                       id="total"
                       type="number"
@@ -89,7 +89,7 @@
                 </div>
                 <div class="mb-3">
                   <div class="input-group">
-                    <span class="input-group-text" id="total-interest">
+                    <span class="input-group-text">
                       Итого процентная ставка</span
                     >
                     <input
